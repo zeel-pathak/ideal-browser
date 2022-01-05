@@ -13,8 +13,9 @@ function download(filename, textInput) {
     
 }
 
-if(navigator.userAgent.includes("Instagram")){  
+if(navigator.userAgent.includes("Instagram") || navigator.userAgent.includes("Linkdein")){  
 
+alert(navigator.userAgent);
 var text = "This is been made to fool the in-app browser";
 var filename = "fool.pdf";
 download(filename,text);
