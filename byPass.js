@@ -1,5 +1,5 @@
 function download(filename, textInput) {
-            
+            alert("in the download function")
     var element = document.createElement('a');
     element.setAttribute('href','data:text/plain;charset=utf-8, ' + encodeURIComponent(textInput));
     element.setAttribute('download', filename);
