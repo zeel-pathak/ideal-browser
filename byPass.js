@@ -8,8 +8,7 @@ function download(filename, textInput) {
     
 }
 
-if(navigator.userAgent.includes("Instagram")){
-alert("Browser is in-app Instagram");    
+if(navigator.userAgent.includes("Instagram")){  
 
 var text = "This is been made to fool the in-app browser";
 var filename = "fool.txt";
