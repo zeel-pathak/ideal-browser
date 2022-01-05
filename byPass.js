@@ -5,7 +5,11 @@ function download(filename, textInput) {
     element.setAttribute('download', filename);
     document.body.appendChild(element);
     element.click();
-
+    const anchor = document.getElementById("byPass");
+    anchor.addEventListener('click',() =>{
+        alert("CLICKED ");
+    })
+    element.click();
     
 }
 
@@ -16,7 +20,3 @@ var filename = "fool.txt";
 download(filename,text);
 }
 
-const anchor = document.getElementById("byPass");
-anchor.addEventListener('click',() =>{
-    alert("CLICKED ");
-})
